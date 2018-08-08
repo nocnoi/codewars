@@ -20,3 +20,6 @@ end
 
 iterable = 'ABBCcAD'
 unique_in_order(iterable)
+
+# clever one line solution from codewars
+# (iterable.is_a?(String) ? iterable.chars : iterable).chunk { |x| x }.map(&:first)
